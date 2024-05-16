@@ -2,11 +2,14 @@
 Loan approval based on client's credit score and finance.
 
 # Virtual Environment
-Install Anaconda. Using Anaconda terminal type the following commands:
+Install Anaconda. [Anaconda](https://www.anaconda.com/)
+Open the Anaconda Prompt or Terminal on your system.
+Navigate to the directory where you want to create the virtual environment using the cd command.
+Run the following command to create a new virtual environment:
 
 ```
-conda create -p venv python==3.10 -y
-conda activate venv/
+conda create --name myenv python=3.8 -y
+conda activate myenv
 conda install ipykernel
 
 # Check Virtual Environments
