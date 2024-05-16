@@ -23,7 +23,7 @@ conda remove --name myenv --all
 conda env list
 ```
 
-## Sync Project to GitHub
+## Basic GitHub commands
 ```
 git pull
 git add .
@@ -40,6 +40,13 @@ git rm -r folder_name
 git rm -r --cached venv
 
 ```
+
+## Connect Virtual Environment to cloned repository
+1. In VS Code, open the cloned repository folder.
+2. Press Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (macOS) to open the Command Palette.
+3. Type "Python: Select Interpreter" and select the option.
+4. From the list of available interpreters, choose the one corresponding to your 'loan' virtual environment (e.g., ~/anaconda3/envs/loan/python.exe on Windows or ~/anaconda3/envs/loan/bin/python on macOS/Linux).
+5. Verify that the 'loan' virtual environment is selected in the bottom-left corner of the VS Code window.
 
 ## Tools used in this project
 * [hydra](https://hydra.cc/): Manage configuration files - [article](https://mathdatasimplified.com/stop-hard-coding-in-a-data-science-project-use-configuration-files-instead/)
@@ -81,8 +88,17 @@ git rm -r --cached venv
     ├── test_process.py             # test functions for process.py
     └── test_train_model.py         # test functions for train_model.py
 ```
-## Set up the environment
+## Folder Structure Template
+Install Cookiecutter
+```
+pip install cookiecutter
+```
+Create a project based on the template
+```
+cookiecutter https://github.com/khuyentran1401/data-science-template
+```
 
+## Set up the requirements
 
 1. Install [Poetry](https://python-poetry.org/docs/#installation)
 2. Activate the virtual environment:
