@@ -101,6 +101,9 @@ cookiecutter https://github.com/khuyentran1401/data-science-template
 ## Set up the requirements
 
 1. Install [Poetry](https://python-poetry.org/docs/#installation)
+```
+conda install -c conda-forge poetry
+```
 2. Activate the virtual environment:
 ```bash
 poetry shell
