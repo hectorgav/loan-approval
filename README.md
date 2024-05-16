@@ -8,7 +8,9 @@ Install Anaconda. Using Anaconda terminal type the following commands:
 conda create -p venv python==3.10 -y
 conda activate venv/
 conda install ipykernel
-```
 
 # Check Virtual Environments
 conda info --envs
+```
+
+
