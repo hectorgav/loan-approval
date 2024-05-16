@@ -14,6 +14,31 @@ conda install ipykernel
 
 # Check Virtual Environments
 conda info --envs
+
+# Remove the virtual environment
+conda deactivate
+conda remove --name myenv --all
+
+# Verify existing environments
+conda env list
+```
+
+## Sync Project to GitHub
+```
+git pull
+git add .
+git commit -m "adding readme notes"
+git push -u origin main
+
+# Check status
+git status
+git remote -v
+
+# Remove files
+git rm -r folder_name
+## Example:
+git rm -r --cached venv
+
 ```
 
 ## Tools used in this project
